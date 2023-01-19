@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "org.hshekhar";
+option java_multiple_files = true;
+
+package proto;
+
+import "message_ping.proto";
+
+service PingApi {
+
+  rpc Get(PingRequest) returns (PingResponse) {};
+
+}

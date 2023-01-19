@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "org.hshekhar";
+option java_multiple_files = true;
+
+package proto;
+
+message PingRequest {
+  int32 times = 1;
+}
+
+message PingResponse {
+  repeated string message = 1;
+}
